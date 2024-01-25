@@ -2,7 +2,7 @@
 
 There are some basic filesystem commands we used during the lectures and labs of CSE 15L.
 ### 1. `cd` command 
-   - using the command with no arguments. \
+   - using the command with no arguments. \\
     ![Image](cd-dir-arg.png) \
     Working directory: `home` ( `~` ) \
    The command updates the current working directory to the given path. However, with no Argument, it simply does nothing. \
