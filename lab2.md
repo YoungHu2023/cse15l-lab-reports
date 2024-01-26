@@ -47,13 +47,13 @@ My chat server code:
     `contains()` <br>
     `split()` <br>
 - argument:  <br>
-    `/add-message?s=Hello&user=Yang` the path and query part of the URL
+    `new URL(http://localhost:8000/add-message?s=Hello&user=Yang)` the path and query part of the URL
    I typed into the browser.   <br>
    `"/add-message"` the value of the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
    `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the value of the arguments to parse the content of queries and format them into a string. <br>
 - relevant field: <br>
     `chat`: the concatenated messages on the server. The new message `"Yang: Hello"` is added to it. <br>
-    `url`: the URL is specified to `/add-message?s=Hello&user=Yang`.
+    `url`: the URL is specified to `http://localhost:8000/add-message?s=Hello&user=Yang`.
     `parameters` becomes `s=Hello` and `user=Yang`.
     
 
@@ -67,13 +67,13 @@ My chat server code:
     `contains()` <br>
     `split()` <br>
 - argument:  <br>
-    `/add-message?s=dude&user=Kyle` the path and query part of the URL
+    `new URL(http://localhost:8000/add-message?s=dude&user=Kyle）` the path and query part of the URL
    I typed into the browser.   <br>
    `"/add-message"` the value of the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
    `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the value of the arguments to parse the content of queries and format them into a string. <br>
 - relevant field: <br>
     `chat`: the concatenated messages on the server. The new message `Kyle: dude` is added to it. <br>
-    `url`: the URL is specified to `/add-message?s=dude&user=Kyle`. <br>
+    `url`: the URL is specified to `http://localhost:8000/add-message?s=dude&user=Kyle`. <br>
     `parameters` becomes `s=dude` and `user=Kyle`. <br>
 
 
