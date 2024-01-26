@@ -15,7 +15,8 @@ My chat server code:
             } else {
                 if (url.getPath().contains("/add-message")) {
                     String[] parameters = url.getQuery().split("&");
-                    chat += String.format("%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]);
+                    chat += String.format("%s: %s\n",parameters[1].split("=")[1], <br>
+                    parameters[0].split("=")[1]);
                     return chat;
                 }
             return "404 Not Found!";
@@ -26,7 +27,7 @@ My chat server code:
     class ChatServer {
         public static void main(String[] args) throws IOException {
             if(args.length == 0){
-                System.out.println("Missing port number! Try any number between 1024 to 49151");
+                System.out.println("Missing port number!");
                 return;
             }
 
