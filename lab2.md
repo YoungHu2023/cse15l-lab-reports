@@ -52,7 +52,7 @@ My chat server code:
    `"/add-message"` the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
    `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the arguments to parse the content of queries and format them into a string. <br>
 - relevant field: <br>
-    `chat`: the concatenated messages on the server. The new message is added to it. <br>
+    `chat`: the concatenated messages on the server. The new message `"Yang: Hello"` is added to it. <br>
     
 
 ![Image](chat2.png)  
@@ -65,12 +65,12 @@ My chat server code:
     `contains()` <br>
     `split()` <br>
 - argument:  <br>
-    `/add-message?s=Hello&user=Kyle` the path and query part of the URL
+    `/add-message?s=dude&user=Kyle` the path and query part of the URL
    I typed into the browser.   <br>
    `"/add-message"` the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
    `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the arguments to parse the content of queries and format them into a string. <br>
 - relevant field: <br>
-    `chat`: the concatenated messages on the server. The new message is added to it. <br>
+    `chat`: the concatenated messages on the server. The new message `Kyle: dude` is added to it. <br>
 
 
 
