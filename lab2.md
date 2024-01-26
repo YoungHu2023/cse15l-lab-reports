@@ -38,26 +38,39 @@ My chat server code:
 
 
 ![Image](chat1.png)  
-- Methods called:  
-    `handleRequest(URI url)`: ths method takes in a request and returns a string as the content of a webpage.  
-    `getPath()`: this method returns the path of the URL.  
-    `getQuery()`: this method returns the query in a URL.  
-    `String.format(String s, String s1)`: the method returns a string, in which some special charaters are replaced by the given string(s).
-    `equals()`
-    `contains()`
-- argument:  
-    `/add-message?s=Hello&user=Yang` the path and query part of the URL I typed into the browser.   
+- Methods called:  <br>
+    `handleRequest(URI url)`: ths method takes in a request and returns a string as the content of a webpage.  <br>
+    `getPath()`: this method returns the path of the URL.  <br>
+    `getQuery()`: this method returns the query in a URL.  <br>
+    `String.format(String s, String s1)`: the method returns a string, in which some special charaters are replaced by the given string(s).<br>
+    `equals()` <br>
+    `contains()` <br>
+    `split()` <br>
+- argument:  <br>
+    `/add-message?s=Hello&user=Yang` the path and query part of the URL
+   I typed into the browser.   <br>
+   `"/add-message"` the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
+   `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the arguments to parse the content of queries and format them into a string. <br>
 - relevant field: <br>
-    `chat`: the concatenated messages on the server. The new message is added to it. 
-
+    `chat`: the concatenated messages on the server. The new message is added to it. <br>
+    
 
 ![Image](chat2.png)  
-- Methods called:  
-    `public String handleRequest(URI url)`:  
-- argument:  
-    `/add-message?s=Anybody here?&user=Kyle` the path and query part of the URL I typed into the browser.   
+- Methods called:  <br>
+    `handleRequest(URI url)`: ths method takes in a request and returns a string as the content of a webpage.  <br>
+    `getPath()`: this method returns the path of the URL.  <br>
+    `getQuery()`: this method returns the query in a URL.  <br>
+    `String.format(String s, String s1)`: the method returns a string, in which some special charaters are replaced by the given string(s).<br>
+    `equals()` <br>
+    `contains()` <br>
+    `split()` <br>
+- argument:  <br>
+    `/add-message?s=Hello&user=Kyle` the path and query part of the URL
+   I typed into the browser.   <br>
+   `"/add-message"` the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
+   `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the arguments to parse the content of queries and format them into a string. <br>
 - relevant field: <br>
-    `chat`: the concatenated messages on the server. The new message is added to it.  
+    `chat`: the concatenated messages on the server. The new message is added to it. <br>
 
 
 
