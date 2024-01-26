@@ -38,21 +38,29 @@ My chat server code:
 
 
 ![Image](chat1.png)  
-Methods called:  
-- `public String handleRequest(URI url)`:  
-      - argument:  
-          `/add-message?s=Hello&user=Yang` the path and query part of the URL I typed into the browser.   
-      - relevant field: <br>
-          `chat`: the concatenated messages on the server. The new message is added to it. 
+- Methods called:  
+    `handleRequest(URI url)`: ths method takes in a request and returns a string as the content of a webpage.  
+    `getPath()`: this method returns the path of the URL.  
+    `getQuery()`: this method returns the query in a URL.  
+    `String.format(String s, String s1)`: the method returns a string, in which some special charaters are replaced by the given string(s).
+    `equals()`
+    `contains()`
+- argument:  
+    `/add-message?s=Hello&user=Yang` the path and query part of the URL I typed into the browser.   
+- relevant field: <br>
+    `chat`: the concatenated messages on the server. The new message is added to it. 
 
 
-![Image](chat2.png  
-Methods called:  
-- `public String handleRequest(URI url)`:   
-      - argument:  <br>
-          `/add-message?s=Anybody%20here?&user=Kyle` the path and query part of the URL I typed into the browser.  
-      - relevant field:  <br>
-          `chat`: the concatenated messages on the server. The new message is added to it. 
+![Image](chat2.png)  
+- Methods called:  
+    `public String handleRequest(URI url)`:  
+- argument:  
+    `/add-message?s=Anybody here?&user=Kyle` the path and query part of the URL I typed into the browser.   
+- relevant field: <br>
+    `chat`: the concatenated messages on the server. The new message is added to it.  
+
+
+
 Which methods in your code are called?
 What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
