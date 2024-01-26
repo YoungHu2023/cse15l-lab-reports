@@ -40,7 +40,7 @@ Methods called:
 - `public String handleRequest(URI url)`:  
       - argument:  
           `/add-message?s=Hello&user=Yang` the path and query part of the URL I typed into the browser.   
-      - relevant field: 
+      - relevant field: <br>
           `chat`: the concatenated messages on the server. The new message is added to it. 
   
 Methods called:  
