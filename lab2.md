@@ -37,7 +37,7 @@ My chat server code:
     }
 
 
-![Image][chat1.png]  
+![Image](chat1.png)  
 Methods called:  
 - `public String handleRequest(URI url)`:  
       - argument:  
@@ -46,7 +46,7 @@ Methods called:
           `chat`: the concatenated messages on the server. The new message is added to it. 
 
 
-![Image][chat2.png]  
+![Image](chat2.png)  
 Methods called:  
 - `public String handleRequest(URI url)`:   
       - argument:  <br>
@@ -60,4 +60,4 @@ How do the values of any relevant fields of the class change from this specific 
 ### Part 2 SSH Keys and Login
 
 ### Part 3 What I learned
-During these two weeks, I learned many new commands,
+During these two weeks, I learned many new commands.
