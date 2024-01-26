@@ -77,9 +77,16 @@ My chat server code:
     `parameters` becomes `s=dude` and `user=Kyle`. <br>
 
 
-
-
 ### Part 2 SSH Keys and Login
+
+- The absolute path to the private key for my SSH key for logging into `ieng6`: <br>
+![Image](ls1.png)
+
+- The absolute path to the public key for my SSH key for logging into `ieng6`: <br>
+![Image](ls2.png)
+
+- Terminal interaction where I log into your ieng6 account without being asked for a password: <br>
+![Image](ls3.png)
 
 ### Part 3 What I learned
 During these two weeks, I learned many new commands.
