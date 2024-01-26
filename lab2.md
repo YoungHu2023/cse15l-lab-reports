@@ -49,10 +49,12 @@ My chat server code:
 - argument:  <br>
     `/add-message?s=Hello&user=Yang` the path and query part of the URL
    I typed into the browser.   <br>
-   `"/add-message"` the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
-   `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the arguments to parse the content of queries and format them into a string. <br>
+   `"/add-message"` the value of the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
+   `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the value of the arguments to parse the content of queries and format them into a string. <br>
 - relevant field: <br>
     `chat`: the concatenated messages on the server. The new message `"Yang: Hello"` is added to it. <br>
+    `url`: the URL is specified to `/add-message?s=Hello&user=Yang`.
+    `parameters` becomes `s=Hello` and `user=Yang`.
     
 
 ![Image](chat2.png)  
@@ -67,16 +69,15 @@ My chat server code:
 - argument:  <br>
     `/add-message?s=dude&user=Kyle` the path and query part of the URL
    I typed into the browser.   <br>
-   `"/add-message"` the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
-   `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the arguments to parse the content of queries and format them into a string. <br>
+   `"/add-message"` the value of the argument in `url.getPath().contains()`, checking if the correct path is passed in. <br>
+   `"%s: %s\n",parameters[1].split("=")[1],parameters[0].split("=")[1]` the value of the arguments to parse the content of queries and format them into a string. <br>
 - relevant field: <br>
     `chat`: the concatenated messages on the server. The new message `Kyle: dude` is added to it. <br>
+    `url`: the URL is specified to `/add-message?s=dude&user=Kyle`. <br>
+    `parameters` becomes `s=dude` and `user=Kyle`. <br>
 
 
 
-Which methods in your code are called?
-What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
 ### Part 2 SSH Keys and Login
 
