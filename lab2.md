@@ -1,17 +1,13 @@
 ### Part 1 Create ChatServer
 My chat server code: 
 
-'''
-
     import java.io.IOException;
     import java.net.URI
     
     class Handler implements URLHandler {
         // The one bit of state on the server: messages will be displayed by
         // various requests.
-        String username;
         String chat = "";
-        String msg;
 
         public String handleRequest(URI url) {
             if (url.getPath().equals("/")) {
@@ -39,8 +35,25 @@ My chat server code:
             Server.start(port, new Handler());
         }
     }
-'''
+
+Methods called: \\
+- `public String handleRequest(URI url)`: \\
+      - argument: \\
+          `/add-message?s=Hello&user=Yang` the path and query part of the URL I typed into the browser. \\
+      - relevant field: \\
+          `chat`: the concatenated messages on the server. The new message is added to it. 
+  
+Methods called: \\
+- `public String handleRequest(URI url)`: \\
+      - argument: \\
+          `/add-message?s=Anybody%20here?&user=Kyle` the path and query part of the URL I typed into the browser. \\
+      - relevant field: \\
+          `chat`: the concatenated messages on the server. The new message is added to it. 
+Which methods in your code are called?
+What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
 ### Part 2 SSH Keys and Login
 
 ### Part 3 What I learned
+During these two weeks, I learned many new commands,
