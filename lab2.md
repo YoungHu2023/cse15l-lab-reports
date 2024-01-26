@@ -43,11 +43,11 @@ Methods called:
       - relevant field: 
           `chat`: the concatenated messages on the server. The new message is added to it. 
   
-Methods called:   
+Methods called:  
 - `public String handleRequest(URI url)`:   
-      - argument:   
-          `/add-message?s=Anybody%20here?&user=Kyle` the path and query part of the URL I typed into the browser.   
-      - relevant field:   
+      - argument:  
+          `/add-message?s=Anybody%20here?&user=Kyle` the path and query part of the URL I typed into the browser.  
+      - relevant field:  
           `chat`: the concatenated messages on the server. The new message is added to it. 
 Which methods in your code are called?
 What are the relevant arguments to those methods, and the values of any relevant fields of the class?
