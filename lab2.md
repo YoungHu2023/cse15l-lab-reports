@@ -46,7 +46,7 @@ Methods called:
           `chat`: the concatenated messages on the server. The new message is added to it. 
 
 
-![Image](chat2.png)  
+![Image](chat2.png  
 Methods called:  
 - `public String handleRequest(URI url)`:   
       - argument:  <br>
