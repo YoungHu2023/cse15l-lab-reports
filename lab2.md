@@ -85,8 +85,8 @@ My chat server code:
 - The absolute path to the public key for my SSH key for logging into `ieng6`: <br>
 ![Image](ls2.png)
 
-- Terminal interaction where I log into your ieng6 account without being asked for a password: <br>
+- Terminal interaction where I log into your `ieng6` account without being asked for a password: <br>
 ![Image](ls3.png)
 
 ### Part 3 What I learned
-During these two weeks, I learned many new commands.
+A lot of the terminal commands were new to me. For example, the `man` command can show all the arguments and options for any terminal command. This command has turned out to be a very useful local reference of how a command functions. 
