@@ -1,6 +1,6 @@
 # CSE 15L Lab Report 3 - Bugs and Commands
 
-Yang Hu 
+Yang Hu
 2/8/2024
 
 ### Part 1 - Bugs
