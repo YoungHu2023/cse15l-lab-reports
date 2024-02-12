@@ -59,7 +59,7 @@ The options of command `grep` :
 $ grep -c "cell" biomed/1471-213X-1-2.txt
 58
 ```
-This option searches for "cell" in the file `1471-213X-1-2.txt` and display the count of occurance of the word "cell".[^1] This can be useful for finding some keywords in a file and to determine if the file is talking about a cetain topic.  
+This option searches for "cell" in the file `1471-213X-1-2.txt` and display the count of occurance of the word "cell".[^1] This can be useful for finding some keywords in a file and to determine if the file is talking about a cetain topic.
   
 ```
 $ cat biomed/*.txt | grep -c "species"
@@ -95,7 +95,7 @@ $ grep -C 1 "cell" biomed/1471-213X-1-2.txt
         these genetically tractable systems for studying cell
         migration.
 ```
-This option gives lines both before and after the keyword.[^1] This is very useful because it shows more context about the found word.  
+This option gives lines both before and after the keyword.[^1] This is very useful because it shows more context about the found word.
 
 ```
 $ grep -A 1 "example" biomed/1471-213X-1-2.txt
@@ -110,7 +110,7 @@ This option gives lines after the keyword. [^1] This is useful for getting the e
 $ grep -ic "cell" biomed/1471-213X-1-2.txt
 59
 ```
-This option makes the search case-insensitive so that it can find some words that are at the biggning of the sentence.[^1] Here we can see that the number of occurance of the word is higher and more accurate.   
+This option makes the search case-insensitive so that it can find some words that are at the biggning of the sentence.[^1] Here we can see that the number of occurance of the word is higher and more accurate. 
 
 ```
 $ grep -ir "unix" .
@@ -145,7 +145,7 @@ $ grep -m1 "Bin Ladin" 911report/*
 911report/chapter-7.txt:                qualifications for this plot were their devotion to Usama Bin Ladin, their veteran
 911report/chapter-8.txt:                operational information relating to Usama Bin Ladin.
 ```
-This option stands for "max number of lines". It stops the search after the input number of lines are found in a file.[^2] This is very useful for a lot of outputs, when you only want see one match per file.  
+This option stands for "max number of lines". It stops the search after the input number of lines are found in a file.[^2] This is very useful for a lot of outputs, when you only want see one match per file.
 
 ```
 $ grep -m3 "cell" biomed/1471-213X-1-2.txt
