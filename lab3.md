@@ -65,7 +65,7 @@ This option searches for "cell" in the file `1471-213X-1-2.txt` and display the 
 $ cat biomed/*.txt | grep -c "species"
 1351
 ```
-This example first feeds in all the contents of txt files in `biomed` direcotry and returns the count of occurance of the word "species".[^1] This is useful for looking for the frequency of occurance for some word in the folder.  
+This example first feeds in all the contents of txt files in `biomed` direcotry and returns the count of occurance of the word "species".[^1] This is useful for looking for the frequency of occurance for some word in the folder.
 
 2. option `-A`, `-B` and `-C`:
 ```
@@ -103,7 +103,7 @@ $ grep -A 1 "example" biomed/1471-213X-1-2.txt
           TU2562 and several examples of PLMs with axonal defects
           in strain EA485. All of the 189 PLMs scored in TU2562 had
 ```
-This option gives lines after the keyword. [^1] This is useful for getting the examples in the file.  
+This option gives lines after the keyword. [^1] This is useful for getting the examples in the file.
 
 3. option `-i`
 ```
@@ -126,7 +126,7 @@ $ grep -ir "unix" .
 ./biomed/gb-2003-4-2-r14.txt:          length (from UNIX wc command) divided by 3 was used to
 ./biomed/gb-2003-4-4-r26.txt:          was performed in a Unix environment using Perl and Bourne
 ```
-This command gets useful when it is searching for words that could be incorrectly capitalized.[^1]  
+This command gets useful when it is searching for words that could be incorrectly capitalized.[^1]
 
 4. option `-m'
 ```
