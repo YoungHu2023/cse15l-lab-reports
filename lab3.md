@@ -1,12 +1,12 @@
 # CSE 15L Lab Report 3 - Bugs and Commands
 
-Yang Hu\\
+Yang Hu \
 2/8/2024
 
 ### Part 1 - Bugs
 
-Here I will take the bug in `reverseInPlace` method in `ArrayExamples.java` from Lab 4 activities. \\
-1. failure-inducing input for the buggy program \\
+Here I will take the bug in `reverseInPlace` method in `ArrayExamples.java` from Lab 4 activities. \
+1. failure-inducing input for the buggy program \
 ```
   @Test
   public void testReverseInPlace2() {
@@ -17,7 +17,7 @@ Here I will take the bug in `reverseInPlace` method in `ArrayExamples.java` from
   }
 ```
 
-2. input that doesn't induce a failure \\
+2. input that doesn't induce a failure \
 ```
 public class ArrayTests {
 	@Test 
