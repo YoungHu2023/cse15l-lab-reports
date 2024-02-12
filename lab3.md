@@ -31,7 +31,15 @@ public class ArrayTests {
 3. the symptom 
 ![Image](test_sym.png) \\
 
-4. the bug
+4. the bug\\
+Before change:\\
+```
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
 
 ### Part 2 - Researching Commands
 The options of command `grep` :
