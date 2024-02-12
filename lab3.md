@@ -15,7 +15,7 @@ Here I will take the bug in `reverseInPlace` method in `ArrayExamples.java` from
     ArrayExamples.reverseInPlace(input);
     assertArrayEquals(expected, input);
   }
-```
+```  
 
 2. input that doesn't induce a failure 
 ```
@@ -26,7 +26,7 @@ public class ArrayTests {
     ArrayExamples.reverseInPlace(input);
     assertArrayEquals(new int[]{1}, input);
 	}
-```
+```  
 
 3. the symptom 
 ![Image](test_sym.png) 
@@ -39,7 +39,7 @@ Before change:
       arr[i] = arr[arr.length - i - 1];
     }
   }
-```
+```  
 After change:  
 ```
 // The fixed code that reverse the array correctly
@@ -49,7 +49,7 @@ After change:
       arr[i] = temp[arr.length - i - 1];
     }
   }
-```
+```  
 The bug is that the array is modified before the correct value is extracted. The first half of elements are already replaced by reference to the second half of the original array when the method wants to retrieve the original element in the first half. I shallow copied the input array to a temporary array so that the indices and references are saved when assigning new values to the old array.  
 
 ### Part 2 - Researching Commands
@@ -58,13 +58,13 @@ The options of command `grep` :
 ```
 $ grep -c "cell" biomed/1471-213X-1-2.txt
 58
-```
+```  
 This option searches for "cell" in the file `1471-213X-1-2.txt` and display the count of occurance of the word "cell".[^1] This can be useful for finding some keywords in a file and to determine if the file is talking about a cetain topic.  
   
 ```
 $ cat biomed/*.txt | grep -c "species"
 1351
-```
+```  
 This example first feeds in all the contents of txt files in `biomed` direcotry and returns the count of occurance of the word "species".[^1] This is useful for looking for the frequency of occurance for some word in the folder.  
 
 2. option `-A`, `-B` and `-C`:
@@ -94,7 +94,7 @@ $ grep -C 1 "cell" biomed/1471-213X-1-2.txt
         conserved in vertebrates, which confirms the efficacy of
         these genetically tractable systems for studying cell
         migration.
-```
+```  
 This option gives lines both before and after the keyword.[^1] This is very useful because it shows more context about the found word.  
 
 ```
@@ -102,14 +102,14 @@ $ grep -A 1 "example" biomed/1471-213X-1-2.txt
           PLMs. Figure 3shows an example of a normal PLM in strain
           TU2562 and several examples of PLMs with axonal defects
           in strain EA485. All of the 189 PLMs scored in TU2562 had
-```
+```  
 This option gives lines after the keyword. [^1] This is useful for getting the examples in the file.  
 
 3. option `-i`
 ```
 $ grep -ic "cell" biomed/1471-213X-1-2.txt
 59
-```
+```  
 This option makes the search case-insensitive so that it can find some words that are at the biggning of the sentence.[^1] Here we can see that the number of occurance of the word is higher and more accurate.   
 
 ```
@@ -125,7 +125,7 @@ $ grep -ir "unix" .
 ./biomed/gb-2002-3-9-research0043.txt:          UNIX platforms (Sun, SGI, Compaq) was used to carry out
 ./biomed/gb-2003-4-2-r14.txt:          length (from UNIX wc command) divided by 3 was used to
 ./biomed/gb-2003-4-4-r26.txt:          was performed in a Unix environment using Perl and Bourne
-```
+```  
 This command gets useful when it is searching for words that could be incorrectly capitalized.[^1]  
 
 4. option `-m'
@@ -144,7 +144,7 @@ $ grep -m1 "Bin Ladin" 911report/*
 911report/chapter-6.txt:                agencies and capacities to address the emerging threat from Usama Bin Ladin and his
 911report/chapter-7.txt:                qualifications for this plot were their devotion to Usama Bin Ladin, their veteran
 911report/chapter-8.txt:                operational information relating to Usama Bin Ladin.
-```
+```  
 This option stands for "max number of lines". It stops the search after the input number of lines are found in a file.[^2] This is very useful for a lot of outputs, when you only want see one match per file.  
 
 ```
@@ -152,7 +152,7 @@ $ grep -m3 "cell" biomed/1471-213X-1-2.txt
         cellular behaviors. It is essential for animal development,
         immune system function, and wound repair. Defects in cell
         and failure to control cell migration is an important step
-```
+```  
 Or, it is useful when the output is too long and we want only the first 3 results in the file.[^2]  
 
 [1]: https://www.geeksforgeeks.org/grep-command-in-unixlinux/#
