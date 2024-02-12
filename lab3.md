@@ -59,13 +59,13 @@ The options of command `grep` :
 $ grep -c "cell" biomed/1471-213X-1-2.txt
 58
 ```
-This option searches for "cell" in the file `1471-213X-1-2.txt` and display the count of occurance of the word "cell".[^1] This can be useful for finding some keywords in a file and to determine if the file is talking about a cetain topic.
+This option searches for "cell" in the file `1471-213X-1-2.txt` and display the count of occurance of the word "cell".[1] This can be useful for finding some keywords in a file and to determine if the file is talking about a cetain topic.
   
 ```
 $ cat biomed/*.txt | grep -c "species"
 1351
 ```
-This example first feeds in all the contents of txt files in `biomed` direcotry and returns the count of occurance of the word "species".[^1] This is useful for looking for the frequency of occurance for some word in the folder.
+This example first feeds in all the contents of txt files in `biomed` direcotry and returns the count of occurance of the word "species".[1] This is useful for looking for the frequency of occurance for some word in the folder.
 
 2. option `-A`, `-B` and `-C`:
 ```
@@ -95,7 +95,7 @@ $ grep -C 1 "cell" biomed/1471-213X-1-2.txt
         these genetically tractable systems for studying cell
         migration.
 ```
-This option gives lines both before and after the keyword.[^1] This is very useful because it shows more context about the found word.
+This option gives lines both before and after the keyword.[1] This is very useful because it shows more context about the found word.
 
 ```
 $ grep -A 1 "example" biomed/1471-213X-1-2.txt
@@ -103,14 +103,14 @@ $ grep -A 1 "example" biomed/1471-213X-1-2.txt
           TU2562 and several examples of PLMs with axonal defects
           in strain EA485. All of the 189 PLMs scored in TU2562 had
 ```
-This option gives lines after the keyword. [^1] This is useful for getting the examples in the file.
+This option gives lines after the keyword. [1] This is useful for getting the examples in the file.
 
 3. option `-i`
 ```
 $ grep -ic "cell" biomed/1471-213X-1-2.txt
 59
 ```
-This option makes the search case-insensitive so that it can find some words that are at the biggning of the sentence.[^1] Here we can see that the number of occurance of the word is higher and more accurate. 
+This option makes the search case-insensitive so that it can find some words that are at the biggning of the sentence.[1] Here we can see that the number of occurance of the word is higher and more accurate. 
 
 ```
 $ grep -ir "unix" .
@@ -126,7 +126,7 @@ $ grep -ir "unix" .
 ./biomed/gb-2003-4-2-r14.txt:          length (from UNIX wc command) divided by 3 was used to
 ./biomed/gb-2003-4-4-r26.txt:          was performed in a Unix environment using Perl and Bourne
 ```
-This command gets useful when it is searching for words that could be incorrectly capitalized.[^1]
+This command gets useful when it is searching for words that could be incorrectly capitalized.[1]
 
 4. option `-m'
 ```
@@ -145,7 +145,7 @@ $ grep -m1 "Bin Ladin" 911report/*
 911report/chapter-7.txt:                qualifications for this plot were their devotion to Usama Bin Ladin, their veteran
 911report/chapter-8.txt:                operational information relating to Usama Bin Ladin.
 ```
-This option stands for "max number of lines". It stops the search after the input number of lines are found in a file.[^2] This is very useful for a lot of outputs, when you only want see one match per file.
+This option stands for "max number of lines". It stops the search after the input number of lines are found in a file.[2] This is very useful for a lot of outputs, when you only want see one match per file.
 
 ```
 $ grep -m3 "cell" biomed/1471-213X-1-2.txt
@@ -153,7 +153,7 @@ $ grep -m3 "cell" biomed/1471-213X-1-2.txt
         immune system function, and wound repair. Defects in cell
         and failure to control cell migration is an important step
 ```
-Or, it is useful when the output is too long and we want only the first 3 results in the file.[^2]  
+Or, it is useful when the output is too long and we want only the first 3 results in the file.[2]  
 
-[1]: https://www.geeksforgeeks.org/grep-command-in-unixlinux/#
-[2]: https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/
+	[1]: https://www.geeksforgeeks.org/grep-command-in-unixlinux/#
+	[2]: https://www.howtogeek.com/496056/how-to-use-the-grep-command-on-linux/
