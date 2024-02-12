@@ -5,7 +5,7 @@ Yang Hu
 
 ### Part 1 - Bugs
 
-Here I will take the bug in `reverseInPlace` method in `ArrayExamples.java` from Lab 4 activities.\\
+Here I will take the bug in `reverseInPlace` method in `ArrayExamples.java` from Lab 4 activities.
 1. failure-inducing input for the buggy program
 ```
   @Test
@@ -49,7 +49,6 @@ After change:
       arr[i] = temp[arr.length - i - 1];
     }
   }
-
 ```
 The bug is that the array is modified before the correct value is extracted. The first half of elements are already replaced by reference to the second half of the original array when the method wants to retrieve the original element in the first half. I shallow copied the input array to a temporary array so that the indices and references are saved when assigning new values to the old array.  
 
