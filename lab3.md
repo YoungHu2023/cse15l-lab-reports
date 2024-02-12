@@ -29,7 +29,7 @@ public class ArrayTests {
 ```
 
 3. the symptom 
-
+![Image](test_sym.png) \\
 
 4. the bug
 
