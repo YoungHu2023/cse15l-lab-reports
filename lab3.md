@@ -54,7 +54,7 @@ The bug is that the array is modified before the correct value is extracted. The
 
 ### Part 2 - Researching Commands
 The options of command `grep` :  
-1. option `-c`  
+1) option `-c`  
 ```
 $ grep -c "cell" biomed/1471-213X-1-2.txt
 58
@@ -67,7 +67,7 @@ $ cat biomed/*.txt | grep -c "species"
 ```
 This example first feeds in all the contents of txt files in `biomed` direcotry and returns the count of occurance of the word "species".[1] This is useful for looking for the frequency of occurance for some word in the folder.
 
-2. option `-A`, `-B` and `-C`:
+2) option `-A`, `-B` and `-C`:
 ```
 $ grep -C 1 "cell" biomed/1471-213X-1-2.txt
         Cell migration is one of the most important and complex
@@ -105,7 +105,7 @@ $ grep -A 1 "example" biomed/1471-213X-1-2.txt
 ```
 This option gives lines after the keyword. [1] This is useful for getting the examples in the file.
 
-3. option `-i`
+3) option `-i`
 ```
 $ grep -ic "cell" biomed/1471-213X-1-2.txt
 59
@@ -128,7 +128,7 @@ $ grep -ir "unix" .
 ```
 This command gets useful when it is searching for words that could be incorrectly capitalized.[1]
 
-4. option `-m'
+4) option `-m'
 ```
 $ grep -m1 "Bin Ladin" 911report/*
 911report/chapter-10.txt:                    Bin Ladin;
