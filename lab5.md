@@ -15,7 +15,7 @@ Thank you!
 Comment ···  
 
 1 Answer  
-Yang Hu <span style="font-size:0.5em;">STAFF</span>  
+Yang Hu <span style="font-size:0.5">STAFF</span>  
 2 hours ago  
 
 
