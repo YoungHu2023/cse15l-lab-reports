@@ -4,7 +4,7 @@ Yang Hu
 3/7/2024  
 
 ### Part 1 - Debugging Scenario
-## How to study for the skill demo besides the practice? #321
+## How to solve this bug in my grade.sh? #321
 Anonymous                                   182  
 5 days ago in Lab REports                              VIEWS  
   
