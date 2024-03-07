@@ -8,21 +8,21 @@ Yang Hu
 Anonymous                                   182  
 5 days ago in Lab REports                              VIEWS  
   
-Are there any other resources recommended to study for the skill demos? I never feel that prepared going into them and I am a bit anxious for skill demo 4.  
-
+I got this result when I am writing the scoring part of `grade.sh`. What is happening here? 
 Thank you!  
 
 Comment ···  
 
 1 Answer  
-Yang Hu <span style="font-size:0.2">STAFF</span>  
+Yang Hu <span style="font-size:0.5">STAFF</span>  
 2 hours ago  
 
 
 
 Comment
 ### Part 2 - Reflection  
-
+ The most useful thing I learnt in the second half of this quarter is Java Debugger. It provides a good way to look into the buggy part of your code and to find out where your code went wrong.  
+ The other thing that really helps is the practice on bash scripts. Using Bash (or the Process class in Java) gives a very flxible way to inspect and modify a file system. It was cool.
 
 
 
