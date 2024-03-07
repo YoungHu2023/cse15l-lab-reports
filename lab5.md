@@ -8,7 +8,7 @@ Yang Hu
 Anonymous                                   182  
 5 days ago in Lab REports                              VIEWS  
   
-I got this result when I am writing the scoring part of `grade.sh`. What is happening here? 
+I got this result when I ran the scoring part of `grade.sh`. What is happening here? 
 Thank you!  
 
 Comment ···  
