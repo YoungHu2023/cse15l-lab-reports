@@ -11,7 +11,8 @@ Anonymous
 182  
 VIEWS  
 ❤  
-3        Are there any other resources recommended to study for the skill demos? I never feel that prepared going into them and I am a bit anxious for skill demo 4.
+3
+Are there any other resources recommended to study for the skill demos? I never feel that prepared going into them and I am a bit anxious for skill demo 4.
 
 
 Thank you!
