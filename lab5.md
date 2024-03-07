@@ -5,7 +5,7 @@ Yang Hu
 
 ### Part 1 - Debugging Scenario
 ## How to study for the skill demo besides the practice? #321
-Anonymous                                      182  
+Anonymous                                    182  
 5 days ago in Lab REports                              VIEWS  
 
        ❤  
