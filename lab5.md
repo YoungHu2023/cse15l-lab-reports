@@ -19,11 +19,11 @@ Comment ···
 Yang Hu <span style="font-size:0.5">STAFF</span>  
 2 hours ago  
 
-  Anonymous
-  2d
-  Thank you very much!
+           Anonymous  
+           2d  
+           Thank you very much!  
 
-  Reply ···  
+           Reply ···  
 
 ### Part 2 - Reflection  
  The most useful thing I learnt in the second half of this quarter is Java Debugger. It provides a good way to look into the buggy part of your code and to find out where your code went wrong.  
