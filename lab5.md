@@ -24,9 +24,13 @@ You can start to debug this by inserting print statements in your java and bash 
 
      Anonymous  
      1h  
-     Thank you very much!  
+     Now I totally get it - it was because my grep command to get $lastline was empty. There are always two empty lines in the output of JUnit tests.  I fixed it by grabbing the line with "Test run:".  
+     Thank you very much!  
+     ![Image](bug-fixed.png)  
   
      Reply ···  
+
+
 2. Set up  
 file structure:  
   - list-examples-grader
@@ -37,6 +41,10 @@ file structure:
     - student-submission
     - grade.sh
     - TestListExamples.java
+
+  The contents of each file before fixing the bug：  
+  The full command line (or lines) you ran to trigger the bug：  
+  A description of what to edit to fix the bug：  
       
 
 ### Part 2 - Reflection  
