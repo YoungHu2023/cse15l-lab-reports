@@ -25,8 +25,8 @@ This is my file and directory structure:
 
 The contents of each file before fixing the bug：  
 The full command line (or lines) I ran to trigger the bug： 
-`bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`
-My speculation would be that the test is not running correctly. 
+`bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`  
+My speculation would be that the test is not running correctly.  
 Thank you!  
 
 Comment ···  
@@ -36,6 +36,7 @@ Yang Hu <span style="font-size:0.5">STAFF</span>
 2 hours ago  
 
 You can start to debug this by inserting print statements in your java and bash script, especially around the output of the test!  
+In bash scripts, `cat` and `echo` commands might be helpful. 
 
      Anonymous  
      1h  
