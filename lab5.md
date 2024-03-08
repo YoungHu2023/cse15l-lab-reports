@@ -10,7 +10,7 @@ Anonymous                       �
   
 I got this result when I was running a correct implementation of ListExamples.java in `grade.sh`. Why is the score not correct?    
 ![Image](bug.png)  
-My speculation would be that the 
+My speculation would be that the test is not running correctly. 
 Thank you!  
 
 Comment ···  
@@ -20,7 +20,7 @@ Yang Hu <span style="font-size:0.5">STAFF</span>
 2 hours ago  
 
        Anonymous  
-       2d  
+       1h  
        Thank you very much!  
 
        Reply ···  
