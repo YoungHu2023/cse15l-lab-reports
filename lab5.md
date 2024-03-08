@@ -4,6 +4,7 @@ Yang Hu
 3/7/2024  
 
 ### Part 1 - Debugging Scenario
+1. Edstem Post  
 ## How to solve this bug in my grade.sh?  #321
 Anonymous                                   182  
 5 days ago in Lab REports                              VIEWS  
@@ -26,6 +27,17 @@ You can start to debug this by inserting print statements in your java and bash 
      Thank you very much!  
   
      Reply ···  
+2. Set up  
+file structure:  
+  - list-examples-grader
+    - lib  
+      - hamcrest-core-1.3.jar  
+      - junit-4.13.2.jar  
+    - grading area  
+    - student-submission
+    - grade.sh
+    - TestListExamples.java
+      
 
 ### Part 2 - Reflection  
  The most useful thing I learnt in the second half of this quarter is Java Debugger. It provides a good way to look into the buggy part of your code and to find out where your code went wrong.  
