@@ -9,7 +9,7 @@ Yang Hu
 Anonymous                                   182  
 5 days ago in Lab REports                              VIEWS  
   
-I got this result when I was running a correct implementation of ListExamples.java in `grade.sh`. Why is the final score not correct?    
+I got this result when I was running an implementation of ListExamples.java in `grade.sh`. Why is program stuck and no output is printed?    
 ![Image](bug.png)  
 This is my file and directory structure:  
 ```
@@ -23,10 +23,58 @@ This is my file and directory structure:
     - TestListExamples.java`
 ```
 
-The contents of each file before fixing the bug:  
+The contents of `grade.sh` before fixing the bug:  
+```
+CPATH='.;./lib/hamcrest-core-1.3.jar;./lib/junit-4.13.2.jar'
+
+rm -rf student-submission
+rm -rf grading-area
+
+mkdir grading-area
+
+git clone $1 student-submission
+echo 'Finished cloning'
+
+find student-submission -type f -exec mv '{}' student-submission ';'
+if [ ! -f "student-submission/ListExamples.java" ]
+then
+    echo "Error: ListExamples.java not found in the student submission. Please check your file name."
+    exit 1
+fi
+
+cp -r lib grading-area/
+cp student-submission/ListExamples.java grading-area/
+cp TestListExamples.java grading-area/
+
+cd grading-area
+javac -cp $CPATH TestListExamples.java ListExamples.java
+if [ $? -ne 0 ]; 
+then
+    echo "Error: Compilation failed. You got a 0 because of this. "
+    exit 1
+fi
+
+echo "No Error: Compilation successful."
+
+
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt
+lastline=$(tail -n 1)
+tests=$(echo $lastline | grep 'Tests run: [0-9]+' | awk '{print $NF}')
+failures=$(echo $lastline | awk '{print $NF}')
+successes=$((tests - failures))
+
+echo $lastline
+echo $tests
+echo $failures
+echo "Your score is $successes / $tests"
+```
+The contents of `TestListExamples.java` before fixing the bug:  
+```
+
+```
 The full command line (or lines) I ran to trigger the bug:  
 `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`  
-My speculation would be that the test is not running correctly.  
+My speculation would be that the JUnit test `TestListExamples.java` is not running correctly.  
 Thank you!  
 
 Comment ···  
@@ -43,6 +91,7 @@ In bash scripts, `cat` and `echo` commands might be helpful.
      Now I totally get it - it was because my grep command to get $lastline was empty. There are always two empty lines in the output of JUnit tests.  
      I fixed it by grabbing the line with "Test run:".  
      I edited the 34th line of `grade.sh` to `lastline=$(grep "Tests run:" "junit-output.txt")`. The fiexed `grade.sh` is shown below.  
+     I also added a if-then around the final output because when all tests passed, there is no "Test run:" line in the file.  
      Thank you very much!  
      ![Image](bug-fixed.png)  
   
