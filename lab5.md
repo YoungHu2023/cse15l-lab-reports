@@ -12,18 +12,17 @@ Anonymous                       �
 I got this result when I was running a correct implementation of ListExamples.java in `grade.sh`. Why is the final score not correct?    
 ![Image](bug.png)  
 This is my file and directory structure:  
-  - list-examples-grader
+`  - list-examples-grader
     - lib  
       - hamcrest-core-1.3.jar  
       - junit-4.13.2.jar  
     - grading area  
     - student-submission
     - grade.sh
-    - TestListExamples.java
+    - TestListExamples.java`
 
 The contents of each file before fixing the bug：  
-The full command line (or lines) you ran to trigger the bug：  
-A description of what to edit to fix the bug：  
+The full command line (or lines) I ran to trigger the bug： 
 My speculation would be that the test is not running correctly. 
 Thank you!  
 
@@ -38,6 +37,7 @@ You can start to debug this by inserting print statements in your java and bash 
      Anonymous  
      1h  
      Now I totally get it - it was because my grep command to get $lastline was empty. There are always two empty lines in the output of JUnit tests.  I fixed it by grabbing the line with "Test run:".  
+     The fiexed `grade.sh` is shown below.  
      Thank you very much!  
      ![Image](bug-fixed.png)  
   
