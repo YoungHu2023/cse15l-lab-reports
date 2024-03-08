@@ -23,8 +23,8 @@ This is my file and directory structure:
     - TestListExamples.java`
 ```
 
-The contents of each file before fixing the bug：  
-The full command line (or lines) I ran to trigger the bug： 
+The contents of each file before fixing the bug:  
+The full command line (or lines) I ran to trigger the bug:  
 `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`  
 My speculation would be that the test is not running correctly.  
 Thank you!  
