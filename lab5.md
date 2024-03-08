@@ -3,8 +3,7 @@
 Yang Hu  
 3/7/2024  
 
-### Part 1 - Debugging Scenario
-1. Edstem Post  
+### Part 1 - Debugging Scenario  
 ## How to solve this bug in my grade.sh?  #321
 Anonymous                                   182  
 5 days ago in Lab REports                              VIEWS  
@@ -132,8 +131,9 @@ In bash scripts, `cat` and `echo` commands might be helpful.
      Now I totally get it - it was because my grep command to get $lastline was empty.  
      There are always two empty lines in the output of JUnit tests.  
      I fixed it by grabbing the line with "Test run:".  
-     I edited the 34th line of `grade.sh` to `lastline=$(grep "Tests run:" "junit-output.txt")`. The fiexed `grade.sh` is shown below.  
+     I edited the 34th line of `grade.sh` to `lastline=$(grep "Tests run:" "junit-output.txt")`.  
      I also added a if-then around the final output around line 39 - 45 because when all tests passed, there is no "Test run:" line in the file.  
+     The fiexed `grade.sh` is shown below. 
 
   ![Image](bug-fixed.png) 
 
