@@ -12,7 +12,8 @@ Anonymous                       �
 I got this result when I was running a correct implementation of ListExamples.java in `grade.sh`. Why is the final score not correct?    
 ![Image](bug.png)  
 This is my file and directory structure:  
-`  - list-examples-grader
+```
+- list-examples-grader
     - lib  
       - hamcrest-core-1.3.jar  
       - junit-4.13.2.jar  
@@ -20,6 +21,7 @@ This is my file and directory structure:
     - student-submission
     - grade.sh
     - TestListExamples.java`
+```
 
 The contents of each file before fixing the bug：  
 The full command line (or lines) I ran to trigger the bug： 
