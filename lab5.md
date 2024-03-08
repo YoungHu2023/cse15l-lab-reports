@@ -19,6 +19,8 @@ Comment ···
 Yang Hu <span style="font-size:0.5">STAFF</span>  
 2 hours ago  
 
+You can start to debug this by inserting print statements in your java and bash script, especially around the output of the test!  
+
      Anonymous  
      1h  
      Thank you very much!  
