@@ -135,7 +135,7 @@ In bash scripts, `cat` and `echo` commands might be helpful.
      I edited the 34th line of `grade.sh` to `lastline=$(grep "Tests run:" "junit-output.txt")`. The fiexed `grade.sh` is shown below.  
      I also added a if-then around the final output because when all tests passed, there is no "Test run:" line in the file.  
 
-     ![Image](bug-fixed.png) 
+  ![Image](bug-fixed.png) 
 
      Thank you very much!  
        
