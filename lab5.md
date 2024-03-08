@@ -70,7 +70,48 @@ echo "Your score is $successes / $tests"
 ```
 The contents of `TestListExamples.java` before fixing the bug:  
 ```
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.util.Arrays;
+import java.util.List;
 
+class IsMoon implements StringChecker {
+  public boolean checkString(String s) {
+    return s.equalsIgnoreCase("moon");
+  }
+}
+
+public class TestListExamples {
+
+  @Test
+  public void testFilter() {
+      // Create a sample list
+      List<String> inputList = Arrays.asList("apple", "banana", "moon", "star", "sun");
+
+      // Create a StringChecker that checks for the word "moon"
+      StringChecker isMoonChecker = new IsMoon();
+
+      // Apply the filter method
+      List<String> filteredList = ListExamples.filter(inputList, isMoonChecker);
+
+      // Verify that only "moon" is included in the filtered list
+      assertEquals(1, filteredList.size());
+      assertTrue(filteredList.contains("moon"));
+  }
+
+  @Test
+  public void testMerge() {
+      // Create two sorted lists
+      List<String> list1 = Arrays.asList("apple", "banana", "cherry");
+      List<String> list2 = Arrays.asList("banana", "grape", "orange");
+
+      // Apply the merge method
+      List<String> mergedList = ListExamples.merge(list1, list2);
+
+      // Verify that the merged list is sorted
+      assertEquals(Arrays.asList("apple", "banana", "banana", "cherry", "grape", "orange"), mergedList);
+  }
+}
 ```
 The full command line (or lines) I ran to trigger the bug:  
 `bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected`  
