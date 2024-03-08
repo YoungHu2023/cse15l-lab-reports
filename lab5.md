@@ -133,7 +133,7 @@ In bash scripts, `cat` and `echo` commands might be helpful.
      There are always two empty lines in the output of JUnit tests.  
      I fixed it by grabbing the line with "Test run:".  
      I edited the 34th line of `grade.sh` to `lastline=$(grep "Tests run:" "junit-output.txt")`. The fiexed `grade.sh` is shown below.  
-     I also added a if-then around the final output because when all tests passed, there is no "Test run:" line in the file.  
+     I also added a if-then around the final output around line 39 - 45 because when all tests passed, there is no "Test run:" line in the file.  
 
   ![Image](bug-fixed.png) 
 
@@ -145,7 +145,7 @@ In bash scripts, `cat` and `echo` commands might be helpful.
 
 ### Part 2 - Reflection  
  The most useful thing I learnt in the second half of this quarter is Java Debugger. It provides a good way to look into the buggy part of your code and to find out where your code went wrong.  
- The other thing that really helps is the practice on bash scripts. Using Bash (or the Process class in Java) gives a very flxible way to inspect and modify a file system. It was cool.
+ The other thing that really helps are bash scripts. Using Bash (or the Process class in Java) gives a very flxible way to inspect and modify a file system. It was cool.
 
 
 
