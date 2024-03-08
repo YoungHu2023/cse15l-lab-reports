@@ -9,8 +9,21 @@ Yang Hu
 Anonymous                                   182  
 5 days ago in Lab REports                              VIEWS  
   
-I got this result when I was running a correct implementation of ListExamples.java in `grade.sh`. Why is the score not correct?    
+I got this result when I was running a correct implementation of ListExamples.java in `grade.sh`. Why is the final score not correct?    
 ![Image](bug.png)  
+This is my file and directory structure:  
+  - list-examples-grader
+    - lib  
+      - hamcrest-core-1.3.jar  
+      - junit-4.13.2.jar  
+    - grading area  
+    - student-submission
+    - grade.sh
+    - TestListExamples.java
+
+The contents of each file before fixing the bug：  
+The full command line (or lines) you ran to trigger the bug：  
+A description of what to edit to fix the bug：  
 My speculation would be that the test is not running correctly. 
 Thank you!  
 
@@ -30,21 +43,6 @@ You can start to debug this by inserting print statements in your java and bash 
   
      Reply ···  
 
-
-2. Set up  
-file structure:  
-  - list-examples-grader
-    - lib  
-      - hamcrest-core-1.3.jar  
-      - junit-4.13.2.jar  
-    - grading area  
-    - student-submission
-    - grade.sh
-    - TestListExamples.java
-
-  The contents of each file before fixing the bug：  
-  The full command line (or lines) you ran to trigger the bug：  
-  A description of what to edit to fix the bug：  
       
 
 ### Part 2 - Reflection  
