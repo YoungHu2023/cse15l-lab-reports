@@ -129,11 +129,12 @@ In bash scripts, `cat` and `echo` commands might be helpful.
 
      Anonymous  
      1h  
-     Now I totally get it - it was because my grep command to get $lastline was empty. There are always two empty lines in the output of JUnit tests.  
-     I fixed it by grabbing the line with "Test run:".  
-     I edited the 34th line of `grade.sh` to `lastline=$(grep "Tests run:" "junit-output.txt")`. The fiexed `grade.sh` is shown below.  
-     I also added a if-then around the final output because when all tests passed, there is no "Test run:" line in the file.  
-     Thank you very much!  
+     Now I totally get it - it was because my grep command to get $lastline was empty.  
+     There are always two empty lines in the output of JUnit tests.  
+     I fixed it by grabbing the line with "Test run:".  
+     I edited the 34th line of `grade.sh` to `lastline=$(grep "Tests run:" "junit-output.txt")`. The fiexed `grade.sh` is shown below.  
+     I also added a if-then around the final output because when all tests passed, there is no "Test run:" line in the file.  
+     Thank you very much!  
      ![Image](bug-fixed.png)  
   
      Reply ···  
